@@ -1,0 +1,169 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1158px;
+	}
+
+	/* ================= Components - START ================= */
+	.comp-section {
+		padding-block: 120px;
+	}
+
+	.comp-4cols-list {
+		flex-wrap: nowrap;
+		row-gap: 0;
+	}
+
+	.comp-4cols-item {
+		flex-basis: calc((100% - 72px) / 4);
+
+		background-color: var(--color-item);
+	}
+
+	.comp-3cols-list {
+		row-gap: 48px;
+	}
+
+	.comp-3cols-item {
+		flex-basis: calc((100% - 48px) / 3);
+	}
+	/* ================== Components - END ================== */
+
+	/* =================== Header - START =================== */
+	.header-contacts-list {
+		flex-direction: row;
+		align-items: center;
+		padding-top: 0;
+	}
+
+	.header-contacts-item:last-child {
+		margin-top: 0;
+		margin-left: 40px;
+	}
+
+	.header-contacts-link {
+		padding-block: 24px;
+
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--color-text);
+
+		transition: color var(--trans-common);
+	}
+	/* ==================== Header - END ==================== */
+
+	/* ================ Section Hero - START ================ */
+	.hero-bg {
+		max-width: 1440px;
+		height: 600px;
+		padding-top: 188px;
+
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/bg-hero-desktop.jpg);
+	}
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (-webkit-min-device-pixel-ratio: 2),
+		screen and (-o-min-device-pixel-ratio: 2/1),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		.hero-bg {
+			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+				url(../images/bg-hero-desktop@2x.jpg);
+		}
+	}
+
+	.hero-heading {
+		max-width: 496px;
+		margin-bottom: 48px;
+	}
+	/* ================= Section Hero - END ================= */
+
+	/* ============= Section Advantages - START ============= */
+	.advantages-icon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 112px;
+		margin-bottom: 8px;
+
+		border-radius: 4px;
+		background-color: var(--color-light);
+	}
+
+	.advantages-icon {
+		display: block;
+		width: 64px;
+		height: 64px;
+	}
+
+	.advantages-item-heading {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+	}
+
+	.advantages-item-strong {
+		font-weight: 400;
+	}
+	/* ============== Section Advantages - END ============== */
+
+	/* =========== Section Specialisations - START ========== */
+	.specialisations {
+		display: block;
+		padding-top: 0;
+	}
+
+	.specialisations-item {
+		outline: 1px solid var(--color-accent);
+	}
+	/* ============ Section Specialisations - END =========== */
+
+	/* ============== Section Customers - START ============= */
+	.customers-list {
+		flex-wrap: nowrap;
+		gap: 24px;
+	}
+
+	.customers-item {
+		flex-basis: calc((100% - 120px) / 6);
+		max-width: 168px;
+	}
+	/* =============== Section Customers - END ============== */
+
+	/* =================== Footer - START =================== */
+	.basement {
+		padding-block: 100px;
+	}
+
+	.basement-wrapper {
+		flex-wrap: nowrap;
+		gap: 0;
+		width: auto;
+	}
+
+	.basement-logo {
+		margin-right: 120px;
+	}
+
+	.basement-subscribe {
+		margin-top: 0;
+		margin-left: auto;
+	}
+	/* ==================== Footer - END ==================== */
+
+	/* ================== Portfolio - START ================= */
+	.portfolio {
+		padding-top: 96px;
+	}
+
+	.portfolio-filter-list {
+		margin-bottom: 72px;
+	}
+
+	.portfolio-overlay {
+		width: 360px;
+	}
+	/* =================== Portfolio - END ================== */
+}

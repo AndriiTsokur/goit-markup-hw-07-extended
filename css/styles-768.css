@@ -1,0 +1,235 @@
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+
+	/* ================= Components - START ================= */
+	.comp-4cols-list {
+		display: flex;
+		column-gap: 24px;
+	}
+
+	.comp-4cols-item {
+		flex-basis: calc((100% - 24px) / 2);
+
+		background-color: var(--color-item);
+	}
+
+	.comp-3cols-list {
+		row-gap: 72px;
+	}
+
+	.comp-3cols-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+
+	.comp-item-description {
+		padding-inline: 16px;
+	}
+	/* ================== Components - END ================== */
+
+	/* =================== Header - START =================== */
+	.header-menu-btn-open,
+	.header-menu-btn-close {
+		display: none;
+	}
+
+	.header-menu-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		width: 100%;
+	}
+
+	.header-navigation {
+		margin-bottom: 0;
+	}
+
+	.header-list {
+		display: flex;
+		margin-left: 77px;
+	}
+
+	.header-item:not(:last-child) {
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+
+	.header-link {
+		position: relative;
+
+		display: block;
+		padding-block: 24px;
+
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+	}
+
+	.current.header-link::after {
+		content: '';
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+		height: 4px;
+
+		background-color: var(--color-pressedState);
+		border-radius: 2px;
+	}
+
+	.header-contacts-list {
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-start;
+
+		width: auto;
+		padding-top: 24px;
+	}
+
+	.header-contacts-item:last-child {
+		margin-top: 4px;
+		margin-bottom: 0;
+	}
+
+	.header-contacts-item:first-child {
+		margin-top: 0;
+	}
+
+	/* Hides Social Media from Header Menu */
+	.header-contacts-item:first-child {
+		display: none;
+	}
+
+	.header-contacts-link {
+		display: block;
+
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.33;
+		letter-spacing: 0.04em;
+	}
+
+	.header-contacts-link:hover,
+	.header-contacts-link:focus {
+		color: var(--color-primaryBrand);
+	}
+	/* ==================== Header - END ==================== */
+
+	/* ================ Section Hero - START ================ */
+	.hero-bg {
+		max-width: 768px;
+		height: 436px;
+		padding-top: 110px;
+
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/bg-hero-tablet.jpg);
+	}
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (-webkit-min-device-pixel-ratio: 2),
+		screen and (-o-min-device-pixel-ratio: 2/1),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		.hero-bg {
+			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+				url(../images/bg-hero-tablet@2x.jpg);
+		}
+	}
+
+	.hero-heading {
+		max-width: 500px;
+		margin-bottom: 40px;
+
+		font-size: 56px;
+		line-height: 1.07;
+	}
+	/* ================= Section Hero - END ================= */
+
+	/* ============= Section Advantages - START ============= */
+	.advantages-item-heading {
+		text-align: left;
+	}
+	/* ============== Section Advantages - END ============== */
+
+	/* ================ Section Team - START ================ */
+	.team-item {
+		flex-basis: 264px;
+	}
+	/* ================= Section Team - END ================= */
+
+	/* ============== Section Customers - START ============= */
+	.customers-list {
+		gap: 72px 24px;
+	}
+
+	.customers-item {
+		flex-basis: calc((100% - 48px) / 3);
+		max-width: 168px;
+	}
+	/* =============== Section Customers - END ============== */
+
+	/* =================== Footer - START =================== */
+	.basement-wrapper {
+		justify-content: flex-start;
+		column-gap: 24px;
+		width: 552px;
+	}
+
+	.basement-logo {
+		max-width: 264px;
+		margin-bottom: 0;
+
+		text-align: left;
+	}
+
+	.basement-social {
+		margin-bottom: 0;
+	}
+
+	.basement-title {
+		text-align: left;
+	}
+
+	.basement-subscribe {
+		margin-top: 72px;
+	}
+
+	.subscribe-form {
+		flex-wrap: nowrap;
+		gap: 24px;
+
+		justify-content: flex-start;
+	}
+
+	.subscribe-input {
+		width: 264px;
+	}
+	/* ==================== Footer - END ==================== */
+
+	/* ================== Portfolio - START ================= */
+	.portfolio {
+		padding-top: 64px;
+		padding-bottom: 96px;
+	}
+
+	.portfolio-filter-list {
+		flex-wrap: nowrap;
+		justify-content: center;
+
+		margin-bottom: 64px;
+	}
+
+	.portfolio-btn {
+		padding-block: 12px;
+		padding-inline: 24px;
+	}
+
+	.portfolio-overlay {
+		width: 356px;
+		height: 300px;
+	}
+	/* =================== Portfolio - END ================== */
+}
