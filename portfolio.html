@@ -141,30 +141,56 @@
 				<div class="container">
 					<h1 class="visually-hidden">Portfolio</h1>
 
-					<ul class="portfolio-filter-list">
-						<li class="portfolio-filter-item nobullet">
-							<button class="portfolio-btn btn-current" type="button">All</button>
-						</li>
+					<form class="portfolio-filter-form">
+						<input
+							id="radio-all"
+							class="portfolio-filter-radio visually-hidden"
+							name="portfolio_filter"
+							type="radio"
+							value="all"
+							checked
+						/>
+						<label class="portfolio-btn btn-current" for="radio-all">All</label>
 
-						<li class="portfolio-filter-item nobullet">
-							<button class="portfolio-btn" type="button">Web Site</button>
-						</li>
+						<input
+							id="radio-website"
+							class="portfolio-filter-radio visually-hidden"
+							name="portfolio_filter"
+							type="radio"
+							value="website"
+						/>
+						<label class="portfolio-btn" for="radio-website">Web Site</label>
 
-						<li class="portfolio-filter-item nobullet">
-							<button class="portfolio-btn" type="button">App</button>
-						</li>
+						<input
+							id="radio-app"
+							class="portfolio-filter-radio visually-hidden"
+							name="portfolio_filter"
+							type="radio"
+							value="app"
+						/>
+						<label class="portfolio-btn" for="radio-app">App</label>
 
-						<li class="portfolio-filter-item nobullet">
-							<button class="portfolio-btn" type="button">Design</button>
-						</li>
+						<input
+							id="radio-design"
+							class="portfolio-filter-radio visually-hidden"
+							name="portfolio_filter"
+							type="radio"
+							value="design"
+						/>
+						<label class="portfolio-btn" for="radio-design">Design</label>
 
-						<li class="portfolio-filter-item nobullet">
-							<button class="portfolio-btn" type="button">Marketing</button>
-						</li>
-					</ul>
+						<input
+							id="radio-marketing"
+							class="portfolio-filter-radio visually-hidden"
+							name="portfolio_filter"
+							type="radio"
+							value="marketing"
+						/>
+						<label class="portfolio-btn" for="radio-marketing"> Marketing</label>
+					</form>
 
 					<ul class="comp-3cols-list portfolio-list">
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="app">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -195,7 +221,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="marketing">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -226,7 +252,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="app">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -257,7 +283,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="marketing">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -288,7 +314,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="design">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -319,7 +345,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="marketing">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -350,7 +376,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="design">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -381,7 +407,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="website">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -412,7 +438,7 @@
 							</a>
 						</li>
 
-						<li class="comp-3cols-item portfolio-item nobullet">
+						<li class="comp-3cols-item portfolio-item nobullet" data-filter="website">
 							<a href="javascript:void(0);" class="portfolio-item-link nounderline">
 								<div class="portfolio-overlay">
 									<picture>
@@ -623,5 +649,6 @@
 		</div>
 
 		<script src="./script/script.js"></script>
+		<script src="./script/filter.js"></script>
 	</body>
 </html>

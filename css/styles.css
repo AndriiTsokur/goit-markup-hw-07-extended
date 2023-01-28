@@ -846,7 +846,7 @@ ul {
 	padding-block: 48px;
 }
 
-.portfolio-filter-list {
+.portfolio-filter-form {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 24px;
@@ -867,24 +867,44 @@ ul {
 
 	background-color: var(--color-light);
 	border: 1px solid var(--color-accent);
+	border-radius: 4px;
 
+	cursor: pointer;
 	transition: color var(--trans-common), background-color var(--trans-common),
 		border-color var(--trans-common), box-shadow var(--trans-common);
 }
 
-.btn-current,
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-filter-radio:checked + .portfolio-btn,
+.portfolio-filter-radio:hover + .portfolio-btn,
+.portfolio-filter-radio:focus + .portfolio-btn {
 	color: var(--color-item);
 
 	background-color: var(--color-pressedState);
 	border-color: transparent;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-filter-radio:hover + .portfolio-btn,
+.portfolio-filter-radio:focus + .portfolio-btn {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
 		0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item {
+	transition: opacity var(--trans-common), transform var(--trans-common),
+		visibility var(--trans-common);
+}
+
+.portfolio-item-transform {
+	width: 0;
+	height: 0;
+
+	opacity: 0;
+	transform: scale(0);
+	visibility: hidden;
+}
+
+.portfolio-item-is-hidden {
+	display: none;
 }
 
 .portfolio-item-link {
